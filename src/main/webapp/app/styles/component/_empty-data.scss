@@ -1,0 +1,10 @@
+.empty-side-content {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  width: 100%;
+
+  .main-description {
+    font-size: 16px;
+  }
+}

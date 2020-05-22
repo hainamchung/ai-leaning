@@ -1,0 +1,52 @@
+.media {
+  &.media-comment,
+  &.media-block {
+    .media-body {
+      margin-left: 15px;
+
+      h6 {
+        font-size: 14px;
+
+        small {
+          color: $color-text-03;
+        }
+      }
+
+      p {
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .item-dot {
+        font-size: 7px;
+      }
+    }
+  }
+  &.media-comment {
+    .media-comment {
+      margin-top: 20px;
+    }
+  }
+  &.media-block {
+    + .media-block {
+      margin-top: 20px;
+    }
+  }
+}
+
+.list-comments {
+  .list-item {
+    &:first-child {
+      .media-comment {
+        border-radius: 5px;
+      }
+    }
+    &:last-child {
+      .media-comment {
+        border-radius: 5px;
+      }
+    }
+  }
+}

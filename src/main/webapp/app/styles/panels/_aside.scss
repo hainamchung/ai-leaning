@@ -1,0 +1,48 @@
+.aside-icon {
+  padding-left: 2px;
+}
+
+.user-check-aside {
+  padding-left: 4px;
+}
+.aside-header {
+  @include media-breakpoint-up(lg) {
+    padding: 13px 15px 4px;
+    transform: none;
+  }
+}
+
+.aside-popolamama {
+  .aside-menu-link {
+    color: #fff;
+  }
+  .nav-aside {
+    font-size: 14px;
+    font-weight: $font-weight-medium;
+    .nav-link {
+      height: 34px;
+
+      &:before {
+        height: 34px;
+        top: 0;
+      }
+    }
+  }
+  &.aside-fixed {
+    .aside-header {
+      background-color: $skin-gradient-01;
+      @include gradient-y($skin-gradient-01, $skin-gradient-02, 0%, 100%);
+    }
+    .aside-body {
+      background-color: $skin-gradient-02;
+      @include gradient-y($skin-gradient-02, $skin-gradient-03, 0%, 100%);
+      padding-top: 30px;
+    }
+  }
+}
+
+.content-header {
+  @include media-breakpoint-down(md) {
+    background-color: #fffbf1;
+  }
+}

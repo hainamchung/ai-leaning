@@ -1,0 +1,121 @@
+.tab-panel-content {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-tabs-cus,
+.nav-tabs-default {
+  .badge {
+    margin-left: 10px;
+    background-color: $color-ui-02;
+    border: 1px solid $color-ui-02;
+    color: $color-tab;
+    font-family: $sf-text;
+    font-size: 10px;
+    height: 17px;
+    line-height: 15px;
+    min-width: 17px;
+    padding: 0 2px;
+  }
+  .nav-link {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-family: $sf-display;
+    text-align: center;
+    justify-content: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &.react-tabs__tab--selected,
+    &.active {
+      color: $color-tab-active;
+      font-family: $sf-display-semibold;
+      outline: none;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $color-tab-active;
+      }
+
+      .badge {
+        background-color: $teal;
+        border-color: $teal;
+        color: #fff;
+      }
+    }
+    &.react-tabs__tab--disabled {
+      cursor: default;
+      opacity: 0.6;
+
+      &:hover {
+        color: $color-nav-link;
+      }
+    }
+  }
+}
+.nav-tabs-cus {
+  border-bottom-width: 1px;
+  border-bottom-color: $color-border-tab;
+
+  .nav-link {
+    color: $color-tab;
+    font-size: 14px;
+    min-width: 90px;
+    padding: 16px 10px;
+  }
+}
+.nav-tabs-default {
+  .nav-link {
+    font-size: 12px;
+
+    &.react-tabs__tab--selected,
+    &.active {
+      &::after {
+        bottom: -2px;
+      }
+    }
+  }
+}
+.nav-tabs-sub {
+  .nav-link {
+    background-color: $color-gray-light-03;
+    @include border-radius-top(2px);
+    color: $color-black-defautl;
+    cursor: pointer;
+    font-size: 12px;
+    height: 34px;
+    outline: none;
+    padding: 8px 20px 7px;
+
+    &:not(:first-child) {
+      margin-left: 11px;
+      @include breakpoint(480px) {
+        margin-left: 3px;
+      }
+    }
+
+    @include breakpoint(480px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &.react-tabs__tab--selected {
+      background-color: #fff;
+      color: $color-tab-active;
+      font-weight: $font-weight-semibold;
+    }
+  }
+}
+.tab-sub-panel-content {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px #e7effc;
+  @include border-radius(5px);
+  border-top-left-radius: 0;
+}

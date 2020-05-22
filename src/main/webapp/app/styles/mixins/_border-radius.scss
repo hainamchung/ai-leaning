@@ -1,0 +1,69 @@
+// ----------------------------------------------------------------------
+
+// Border Radius
+
+// ----------------------------------------------------------------------
+
+// example: @include border-radius(10px);
+
+@mixin border-radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+
+// Border Radius Top Only
+@mixin border-radius-top($size) {
+  -webkit-border-radius: $size $size 0 0;
+  -moz-border-radius: $size $size 0 0;
+  border-radius: $size $size 0 0;
+}
+
+// Border Radius Top Left Only
+@mixin border-radius-top-left($size) {
+  -webkit-border-radius: $size 0 0 0;
+  -moz-border-radius: $size 0 0 0;
+  border-radius: $size 0 0 0;
+}
+
+// Border Radius Top Right Only
+@mixin border-radius-top-right($size) {
+  -webkit-border-radius: 0 $size 0 0;
+  -moz-border-radius: 0 $size 0 0;
+  border-radius: 0 $size 0 0;
+}
+
+// Border Radius Bottom Only
+@mixin border-radius-bottom($size) {
+  -webkit-border-radius: 0 0 $size $size;
+  -moz-border-radius: 0 0 $size $size;
+  border-radius: 0 0 $size $size;
+}
+
+// Border Radius Bottom Left Only
+@mixin border-radius-bottom-left($size) {
+  -webkit-border-radius: 0 0 0 $size;
+  -moz-border-radius: 0 0 0 $size;
+  border-radius: 0 0 0 $size;
+}
+
+// Border Radius Bottom Right Only
+@mixin border-radius-bottom-right($size) {
+  -webkit-border-radius: 0 0 $size 0;
+  -moz-border-radius: 0 0 $size 0;
+  border-radius: 0 0 $size 0;
+}
+
+// Border Radius Left Only
+@mixin border-radius-left($size) {
+  -webkit-border-radius: 0 0 $size $size;
+  -moz-border-radius: 0 0 $size $size;
+  border-radius: $size 0 0 $size;
+}
+
+// Border Radius Right Only
+@mixin border-radius-right($size) {
+  -webkit-border-radius: 0 $size $size 0;
+  -moz-border-radius: 0 $size $size 0;
+  border-radius: 0 $size $size 0;
+}

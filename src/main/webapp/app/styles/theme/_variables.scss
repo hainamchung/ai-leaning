@@ -1,0 +1,97 @@
+/*----------pts-theme----------*/
+
+// Brand Colors
+$color-brand-01: #0168fa;
+$color-brand-02: #042893;
+$color-brand-03: #1ce1ac;
+
+// Inverse Colors
+$color-inverse-01: #001737;
+$color-inverse-02: #1b2e4b;
+
+// Text Colors
+$color-text-01: $color-inverse-01;
+$color-text-02: $color-inverse-02;
+$color-text-03: #8392a5;
+$color-text-04: #c0ccda;
+
+// UI Colors
+$color-ui-01: #f5f6fa;
+$color-ui-02: #e5e9f2;
+$color-ui-03: #c0ccda;
+$color-ui-04: #8392a5;
+
+// Height
+$height-base: 38px;
+$height-header: 60px;
+$height-top-content: 50px;
+$height-header-mobile: 55px;
+$height-footer: 46px;
+
+// Width
+$width-sidebar: 220px;
+
+// Marker
+$marker-icon-size: 16px;
+
+// Fonts
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-interui: 'Inter UI', sans-serif;
+$font-family-lato: 'Lato', sans-serif;
+$font-family-rubik: 'Rubik', sans-serif;
+$font-family-system: -apple-system, BlinkMacSystemFont, 'Inter UI', Roboto, sans-serif;
+
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*----------pts-popolamama----------*/
+// Media queries breakpoints
+// Extra small screen / phone
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
+
+// Small screen / tablet
+$screen-sm: 576px;
+$screen-sm-min: $screen-sm;
+
+// Medium screen / desktop
+$screen-md: 768px;
+$screen-md-min: $screen-md;
+
+// Large screen / wide desktop
+$screen-lg: 992px;
+$screen-lg-min: $screen-lg;
+
+// Extra large screen / full hd
+$screen-xl: 1200px;
+$screen-xl-min: $screen-xl;
+
+// Extra extra large screen / large desktop
+$screen-xxl: 1600px;
+$screen-xxl-min: $screen-xxl;
+
+// provide a maximum
+$screen-xs-max: ($screen-sm-min - 1px);
+$screen-sm-max: ($screen-md-min - 1px);
+$screen-md-max: ($screen-lg-min - 1px);
+$screen-xl-max: ($screen-xxl-min - 1px);
+
+// font
+$font-family: 'Roboto', 'Helvetica Neue', sans-serif !default;
+// color
+$bg-body: #fcfcfc;
+$bg-header: #fff;
+$primary-color: #1890ff;
+$link-color: #1890ff; // link color
+$success-color: #52c41a; // success state color
+$warning-color: #faad14; // warning state color
+$error-color: #f5222d; // error state color
+$font-size-base: 14px; // major text font size
+$heading-color: rgba(0, 0, 0, 0.85); // heading text color
+$text-color: rgba(0, 0, 0, 0.65); // major text color
+$text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
+$disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+$border-radius-base: 4px; // major border radius
+$border-color-base: #d9d9d9; // major border color
+$box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // major shadow for layers

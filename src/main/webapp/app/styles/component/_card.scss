@@ -1,0 +1,56 @@
+.card-colums-2 {
+  column-count: 2;
+
+  @include media-breakpoint-only(lg) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 2;
+  }
+  @include media-breakpoint-down(xs) {
+    column-count: 1;
+  }
+}
+
+.task-block {
+  @include border-radius(5px);
+  box-shadow: 0px 5px 20px #e7effc;
+
+  .card-body {
+    @include border-radius-top(5px);
+  }
+  .task-item-footer {
+    @include border-radius-bottom(5px);
+  }
+  .btn-task-edit {
+    border-color: $color-border-1;
+    @include border-radius(4px);
+    color: $gray-500;
+    font-size: 14px;
+    height: 24px;
+    padding: 3px 5px;
+    width: 24px;
+
+    @include min-breakpoint(1024px) {
+      @include transition(all 0.2s ease-in-out);
+
+      &:hover {
+        background-color: $active-03;
+        border-color: $active-03;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.job-offers-item {
+  .selection-action {
+    .btn-save {
+      // padding-bottom: 4px;
+      // padding-top: 4px;
+    }
+    > .loading-wrapper {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.nav-link {
+  .left-icon {
+    color: #566476;
+    font-size: 18px;
+    width: 30px;
+    height: 18px;
+    line-height: 1;
+    stroke-width: 2.3px;
+    text-align: left;
+  }
+  &.active {
+    .left-icon {
+      color: $color-brand-01;
+    }
+  }
+}

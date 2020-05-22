@@ -1,0 +1,65 @@
+/* SF-Pro-Display-Regular */
+@font-face {
+  font-family: 'SFProDisplay-Regular';
+  src: url('./fonts/sf-pro/SF-Pro-Display-Regular.eot');
+  src: url('./fonts/sf-pro/SF-Pro-Display-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/SF-Pro-Display-Regular.woff2') format('woff2'), url('./fonts/sf-pro/SF-Pro-Display-Regular.woff') format('woff'),
+    url('./fonts/sf-pro/SF-Pro-Display-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* SF-Pro-Display-Medium */
+@font-face {
+  font-family: 'SFProDisplay-Medium';
+  src: url('./fonts/sf-pro/SF-Pro-Display-Medium.eot');
+  src: url('./fonts/sf-pro/SF-Pro-Display-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/SF-Pro-Display-Medium.woff2') format('woff2'), url('./fonts/sf-pro/SF-Pro-Display-Medium.woff') format('woff'),
+    url('./fonts/sf-pro/SF-Pro-Display-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* SF-Pro-Display-Semibold */
+@font-face {
+  font-family: 'SFProDisplay-Semibold';
+  src: url('./fonts/sf-pro/SF-Pro-Display-Semibold.eot');
+  src: url('./fonts/sf-pro/SF-Pro-Display-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/SF-Pro-Display-Semibold.woff2') format('woff2'), url('./fonts/sf-pro/SF-Pro-Display-Semibold.woff') format('woff'),
+    url('./fonts/sf-pro/SF-Pro-Display-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* SF-Pro-Text-Regular */
+@font-face {
+  font-family: 'SFProText-Regular';
+  src: url('./fonts/sf-pro/SF-Pro-Text-Regular.eot');
+  src: url('./fonts/sf-pro/SF-Pro-Text-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/SF-Pro-Text-Regular.woff2') format('woff2'), url('./fonts/sf-pro/SF-Pro-Text-Regular.woff') format('woff'),
+    url('./fonts/sf-pro/SF-Pro-Text-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* SF-Pro-Text-Medium */
+@font-face {
+  font-family: 'SFProText-Medium';
+  src: url('./fonts/sf-pro/SF-Pro-Text-Medium.eot');
+  src: url('./fonts/sf-pro/SF-Pro-Text-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/SF-Pro-Text-Medium.woff2') format('woff2'), url('./fonts/sf-pro/SF-Pro-Text-Medium.woff') format('woff'),
+    url('./fonts/sf-pro/SF-Pro-Text-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* SF-Pro-Text-Semibold */
+@font-face {
+  font-family: 'SFProText-Semibold';
+  src: url('./fonts/sf-pro/SF-Pro-Text-Semibold.eot');
+  src: url('./fonts/sf-pro/SF-Pro-Text-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sf-pro/SF-Pro-Text-Semibold.woff2') format('woff2'), url('./fonts/sf-pro/SF-Pro-Text-Semibold.woff') format('woff'),
+    url('./fonts/sf-pro/SF-Pro-Text-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}

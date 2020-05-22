@@ -1,0 +1,7 @@
+@include breakpoint(1280px) {
+  .group-body,
+  .headaer-group-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

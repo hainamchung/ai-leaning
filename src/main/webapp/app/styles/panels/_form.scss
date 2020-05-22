@@ -1,0 +1,5 @@
+.res-col-last {
+  @include media-breakpoint-up(md) {
+    padding-left: 0;
+  }
+}

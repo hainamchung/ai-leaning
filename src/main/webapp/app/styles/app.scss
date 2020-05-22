@@ -1,0 +1,73 @@
+@import '~node_modules/react-dates/lib/css/_datepicker.css';
+/* ############### Ant design FRAMEWORK ############### */
+@import '~node_modules/antd/es/notification/style/index.css';
+@import '~node_modules/antd/es/spin/style/index.css';
+@import '~node_modules/react-perfect-scrollbar/dist/css/styles.css';
+@import '~node_modules/timepicker/jquery.timepicker.css';
+// @import 'node_modules/react-tabs/style/react-tabs.css';
+
+/* ############### Theme ############### */
+@import 'theme/theme';
+
+// Local font
+@import 'fonts/ibm-plex-sans';
+@import 'fonts/inter-ui';
+@import 'fonts/sf-pro';
+
+/*----------pts-popolamama----------*/
+
+@import 'mixins/border-radius';
+@import 'mixins/box-shadow';
+@import 'mixins/flexbox';
+@import 'mixins/breakpoint';
+@import 'mixins/rem';
+@import 'mixins/center-align';
+
+// ----------------------------------------------------------------------
+// Base
+// ----------------------------------------------------------------------
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/border';
+@import 'base/extends';
+@import 'base/form';
+@import 'base/position';
+@import 'base/util';
+@import 'base/background';
+
+// component
+@import 'component/button';
+@import 'component/avatar';
+@import 'component/link';
+@import 'component/card';
+@import 'component/pagination';
+@import 'component/selection';
+@import 'component/loading';
+@import 'component/empty-data';
+@import 'component/suggestion';
+@import 'component/dropdown';
+@import 'component/nav';
+@import 'component/breadcrumb';
+@import 'component/media';
+@import 'component/tabs';
+@import 'component/datepicker';
+@import 'component/gallery-carousel';
+@import 'component/modal';
+@import 'component/toast';
+@import 'component/table';
+@import 'component/reponsive';
+@import 'component/list';
+
+// ----------------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------------
+@import 'panels/footer';
+@import 'panels/public-header';
+@import 'panels/main-layout';
+@import 'panels/aside';
+@import 'panels/sub-sidebar';
+@import 'panels/company';
+@import 'panels/sidebar-list';
+@import 'panels/home';
+@import 'panels/form';
+/*----------pts-popolamama----------*/

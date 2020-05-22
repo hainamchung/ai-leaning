@@ -1,0 +1,57 @@
+.ant-notification-notice-message {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.ant-notification-notice {
+  .ant-notification-notice-close {
+    top: 23px;
+  }
+  .ant-notification-notice-icon {
+    top: 20px;
+  }
+  .ant-notification-notice-message {
+    margin-top: 8px;
+  }
+  &.task-notify {
+    padding: 0;
+    .notify-header-content {
+      padding: 13px 0 11px 20px;
+    }
+    .ant-notification-notice-close {
+      top: 14px;
+    }
+    .ant-notification-notice-message {
+      border-bottom: 1px solid rgba(193, 204, 218, 0.5);
+      display: block;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .notify-main-content {
+      padding: 20px;
+    }
+    .btn-viewall {
+      color: $gray-500;
+      display: block;
+      font-size: 10px;
+      font-family: $sf-text-medium;
+      height: 29px;
+      padding: 6px 10px;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      @include transition(all 0.2s ease-in-out);
+
+      &:hover {
+        color: $active-03;
+      }
+    }
+    .notify-footer {
+      border-top: 1px solid rgba(193, 204, 218, 0.5);
+    }
+  }
+}
+
+.tooltip-inner {
+  max-width: 130px;
+}

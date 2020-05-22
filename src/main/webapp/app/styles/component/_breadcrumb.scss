@@ -1,0 +1,21 @@
+.nav-breadcrumb {
+  .breadcrumb {
+    margin-bottom: 0;
+
+    .breadcrumb-item {
+      font-family: $sf-display;
+      text-transform: unset;
+      &.active {
+        a {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+.top-content {
+  .nav-breadcrumb {
+    padding-left: 10px;
+  }
+}

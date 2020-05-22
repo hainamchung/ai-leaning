@@ -1,0 +1,119 @@
+.avatar-check {
+  &::after {
+    background-color: $green;
+    border: 2px solid #f4f6fa;
+    bottom: 0;
+    @include border-radius(100%);
+    content: '\e90f';
+    color: #fff;
+    font-family: 'popolamamaicon';
+    font-size: 6px;
+    font-weight: 900;
+    height: 15px;
+    line-height: 1;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+    right: -4px;
+    width: 15px;
+  }
+}
+
+.thumb {
+  position: relative;
+  width: 38px;
+  height: 38px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.thumb-xs {
+  width: 26px;
+  height: 26px;
+
+  .thumb-initial {
+    font-size: 10px;
+  }
+}
+
+.thumb-sm {
+  width: 30px;
+  height: 30px;
+
+  .thumb-initial {
+    font-size: 13px;
+  }
+}
+
+.thumb-md {
+  width: 48px;
+  height: 48px;
+
+  .thumb-initial {
+    font-size: 18px;
+  }
+}
+
+.thumb-lg {
+  width: 64px;
+  height: 64px;
+
+  .thumb-initial {
+    font-size: 24px;
+  }
+}
+
+.thumb-xl {
+  width: 72px;
+  height: 72px;
+
+  .thumb-initial {
+    font-size: 30px;
+  }
+}
+
+.thumb-xxl {
+  width: 100px;
+  height: 100px;
+
+  .thumb-initial {
+    font-size: 45px;
+  }
+}
+
+// Extra avatar v2
+.avatar-20 {
+  height: 20px;
+  width: 20px;
+}
+.avatar-28 {
+  height: 28px;
+  width: 28px;
+}
+
+.avatar-30 {
+  height: 30px;
+  width: 30px;
+}
+
+.avatar-45 {
+  height: 45px;
+  width: 45px;
+}
+
+.square-icon-gray {
+  background-color: $color-gray-02;
+  @include border-radius(4px);
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.image-emptypage {
+  height: 232px;
+  width: 300px;
+}

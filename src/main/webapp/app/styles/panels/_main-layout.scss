@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.wrapper {
+  @include flexbox;
+  @include flex-direction(column);
+  min-height: 100%;
+}
+
+.sider-container {
+  .ant-layout-sider-children {
+    overflow-y: auto;
+  }
+}
+
+.public-container {
+  padding-bottom: 40px;
+}
+
+.container {
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+}
+
+.content {
+  padding: 20px;
+  cursor: default;
+  @include media-breakpoint-up(lg) {
+    padding: 25px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 30px;
+  }
+}
+
+.content-fixed {
+  @include media-breakpoint-up(lg) {
+    padding-top: $height-header;
+  }
+}
+.content-auth-alt {
+  min-height: calc(100vh - #{$height-header});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .container {
+    @media (max-width: 1139px) {
+      max-width: none;
+    }
+  }
+}
+.content-verify-email {
+  min-height: auto;
+}
+.verify-email-links {
+  .form-link {
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 1px solid #000000;
+  }
+  .form-link:last-child {
+    border: none;
+  }
+}
+
+.content-body-t-0 {
+  top: 0;
+}
+
+.search-top-form {
+  position: relative;
+  z-index: 20;
+}
+
+.top-content {
+  border-bottom: 1px solid $color-border-gray-01;
+  @include flexbox();
+  @include align-items(center);
+  min-height: 50px;
+  padding: 10px;
+}
+
+.card-header {
+  border-bottom: none;
+}

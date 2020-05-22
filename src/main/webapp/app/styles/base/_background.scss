@@ -1,0 +1,57 @@
+.bg-white {
+  background-color: #fff;
+}
+.bg-none {
+  background: none;
+}
+
+// Extra background colors v2
+.bg-cyan {
+  background-color: $color-cyan;
+}
+
+.bg-gray-03-f {
+  background-color: $color-gray-01 !important;
+}
+.bg-gray-03 {
+  background-color: $color-gray-01;
+}
+.bg-gray-light-01 {
+  background-color: $color-gray-light-01;
+}
+.bg-gray-light-02 {
+  background-color: $color-gray-light-02;
+}
+.bg-gray-light-03 {
+  background-color: $color-gray-light-03;
+}
+.bg-gray-light-04 {
+  background-color: $color-gray-light-04;
+}
+.bg-gray-light-05 {
+  background-color: $color-gray-light-05;
+}
+
+.bg-blue-01 {
+  background-color: $color-blue-01;
+}
+
+.bg-cyan-01 {
+  background-color: $color-cyan-01;
+}
+
+.bg-green-01 {
+  background-color: $color-green-01;
+}
+
+.bg-skin-01 {
+  background-color: $skin-gradient-01;
+  @include gradient-y($skin-gradient-01, $skin-gradient-02, 0%, 100%);
+}
+.bg-skin-user {
+  background-color: $skin-user;
+}
+
+.bg-skin-candidate {
+  background-color: $skin-candidate;
+}

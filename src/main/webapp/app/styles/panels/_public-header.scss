@@ -1,0 +1,40 @@
+.header-public-container {
+  height: auto;
+  line-height: 1;
+  @include rem('padding-bottom', 40);
+  @include rem('padding-top', 40);
+
+  .sologan {
+    @include rem('font-size', 14);
+    @include rem('padding-top', 14);
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+    display: flex;
+    .image {
+      height: 64px;
+    }
+  }
+  .heading-logo {
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.content-header {
+  border-bottom-color: $color-border-gray-01;
+}
+
+.public-header {
+  .aside-logo {
+    &:hover {
+      color: lighten($color-logo, 10%);
+    }
+  }
+}

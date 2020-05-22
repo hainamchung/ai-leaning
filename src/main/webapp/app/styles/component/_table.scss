@@ -1,0 +1,76 @@
+.table-responsive-fix {
+  border: 1px solid $color-border-3;
+  .table {
+    border: 0;
+  }
+}
+.table-occupation-management,
+.table-assistant-management,
+.table-account-management,
+.account-management-content {
+  @include breakpoint(767px) {
+    overflow-x: auto;
+    overflow-y: hidden;
+    .table {
+      min-width: 768px;
+    }
+  }
+}
+.card-dashboard-table {
+  .table-occupation-management,
+  .table-assistant-management,
+  .table-account-management,
+  .account-management-content {
+    .table {
+      min-width: 768px;
+      tr {
+        td,
+        th {
+          &:first-child {
+            white-space: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-assistant-management {
+  .table {
+    th {
+      border-color: $color-border-3;
+      white-space: normal;
+    }
+    td {
+      border-color: $color-border-3;
+      white-space: normal;
+      &:nth-child(2) {
+        border-right: 0;
+      }
+      &:last-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+.account-management-content {
+  .table-account-info {
+    tr {
+      td {
+        vertical-align: middle;
+        white-space: normal;
+        &:first-child {
+          min-width: 150px;
+        }
+        &:last-child {
+          min-width: 150px;
+        }
+      }
+      &:first-child {
+        td {
+          border: none;
+        }
+      }
+    }
+  }
+}

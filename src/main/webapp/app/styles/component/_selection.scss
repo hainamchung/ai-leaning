@@ -1,0 +1,328 @@
+.select-custom {
+  .select-control {
+    border-color: $border-color-theme;
+  }
+  .value-container,
+  .select-control,
+  .select-control.is-opened,
+  .select-label,
+  .select-placeholder {
+    font-size: 12px;
+    font-family: $sf-display;
+  }
+  .select-control {
+    cursor: pointer;
+    min-height: 34px;
+  }
+  .select-indicator-separator {
+    display: none;
+  }
+  .select-control.is-opened {
+    border-color: $color-border;
+    box-shadow: 0 0 0 0.2rem $color-boxshadown;
+  }
+  .select-placeholder {
+    color: $placeholder;
+    font-weight: 300;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 95%;
+  }
+
+  &.select-cus-sm {
+    min-width: 100px;
+
+    .select-control {
+      border-color: $border-color-theme;
+    }
+    .select-control,
+    .select-control.is-opened {
+      box-shadow: none;
+      font-size: 12px;
+      min-height: 30px;
+      height: 30px;
+    }
+    .value-container {
+      height: 28px;
+      color: $color-black-defautl;
+    }
+    .select-indicator {
+      color: $gray-500;
+      padding: 4px;
+    }
+  }
+  &.selection-control-cus {
+    .select-control,
+    .select-control.is-opened {
+      border: 0;
+      height: auto;
+      min-height: unset;
+    }
+    .select-control {
+      height: auto;
+      @include flex(1);
+    }
+
+    .select-value-container {
+      border: 1px solid $border-color-theme;
+      @include border-radius(4px);
+      @include flexbox();
+      @include align-items(center);
+      min-height: calc(1.5em + 0.9375rem + 2px);
+      min-height: -webkit-calc(1.5em + 0.9375rem + 2px);
+      min-height: -moz-calc(1.5em + 0.9375rem + 2px - 1px);
+    }
+    .select-indicator {
+      padding: 5px 8px 5px 5px;
+    }
+    .select-multi-value {
+      background-color: rgba($blue, 0.15);
+      .select-multi-value {
+        background-color: transparent;
+      }
+    }
+    .select-image {
+      height: 20px;
+      min-width: 20px;
+      width: 20px;
+    }
+  }
+  &.selection-multi {
+    .select-clear-indicator {
+      display: none;
+    }
+  }
+}
+
+.select-custom {
+  .select-overlay {
+    display: none;
+  }
+  .select-list {
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+  }
+  .select-image {
+    float: left;
+    margin-right: 10px;
+    min-width: 26px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 26px;
+  }
+  .avatar {
+    img {
+      object-fit: contain;
+    }
+  }
+  .select-label {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 21px;
+  }
+  .delete-icon {
+    color: $gray-500;
+    font-size: 6px;
+    float: right;
+  }
+  .select-icon {
+    // color: $gray-500;
+    // font-size: 6px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: $gray-500 transparent transparent transparent;
+    line-height: 0px;
+  }
+  .select-control {
+    border-color: $border-color-theme;
+    box-shadow: none;
+  }
+  .select-control:hover {
+    border-color: $border-color-theme;
+    box-shadow: none;
+  }
+  .select-multi-value {
+    margin: 2px;
+    border-radius: 15px;
+    &:hover {
+      background-color: rgba($blue, 0.2);
+    }
+  }
+  .remove-value {
+    padding-top: 9px;
+    padding-right: 5px;
+    .select-multi-value,
+    .select-multi-value:hover {
+      font-size: 8px;
+      cursor: pointer;
+      background: none;
+      color: #333;
+    }
+  }
+  .select-menu {
+    z-index: 2;
+  }
+  .multi-value-list {
+    display: flex;
+  }
+  .select-menu-list {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    overflow-y: visible;
+    .select-option-item {
+      background-color: #fff;
+      border-radius: 3px;
+    }
+    .select-option-item:hover,
+    .select-focused-option {
+      background-color: lighten(#e5e9f2, 5%);
+    }
+    .selected-option,
+    .selected-option:hover {
+      background-color: #e5e9f2;
+    }
+    & > div {
+      @include flexbox();
+      @include align-items(center);
+      overflow: hidden;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .select-label {
+        color: #333;
+        padding-top: 0;
+      }
+    }
+  }
+  &.select-thumbnail-custom {
+    .select-image {
+      img {
+        border-radius: 0 !important;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.select-multi-cus {
+  position: relative;
+  .select-control {
+    border: none;
+    height: auto;
+    overflow: visible;
+    box-shadow: none;
+    outline: none;
+  }
+  .select-menu {
+    top: 38px;
+  }
+  .value-container {
+    color: $color-black-defautl;
+    height: auto;
+    padding: 30px 0 0;
+    overflow: visible;
+  }
+  .select-multi-value {
+    background: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .select-multi-label {
+    padding-top: 7px;
+    width: 100%;
+  }
+  .select-clear-indicator {
+    display: none;
+  }
+  .select-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .select-placeholder {
+    padding-left: 10px;
+  }
+  .select-input {
+    border: 1px solid $border-color-theme;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 -2px;
+    padding: 8px 35px 8px 10px;
+    width: 100%;
+    height: 34px;
+  }
+  .remove-value {
+    background-color: transparent;
+    color: #8392a5;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 0;
+
+    &:hover {
+      color: #333;
+    }
+
+    &:focus,
+    &:hover {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .list-item-content {
+    max-height: 120px;
+  }
+}
+
+.selection-step-content,
+.step-content {
+  .value-container {
+    padding-left: 30px;
+
+    &:before {
+      content: '\e939';
+      color: $active-03;
+      font-family: 'popolamamaicon';
+      font-size: 12px;
+      height: 12px;
+      line-height: 1;
+      left: 10px;
+      position: absolute;
+      top: 8px;
+    }
+  }
+}
+
+.selection-status-content,
+.status-content {
+  .value-container {
+    padding-left: 30px;
+
+    &:before {
+      content: '\e96e';
+      color: $active-03;
+      font-family: 'popolamamaicon';
+      font-size: 12px;
+      height: 12px;
+      line-height: 1;
+      left: 10px;
+      position: absolute;
+      top: 8px;
+    }
+  }
+}

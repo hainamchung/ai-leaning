@@ -1,0 +1,86 @@
+$num: 0;
+@while $num <= 300 {
+  .t-#{$num}-f {
+    top: #{$num}px !important;
+  }
+  .r-#{$num}-f {
+    right: #{$num}px !important;
+  }
+  .b-#{$num}-f {
+    bottom: #{$num}px !important;
+  }
+  .l-#{$num}-f {
+    left: #{$num}px !important;
+  }
+
+  $num: $num + 5;
+}
+
+@mixin make-position($num, $viewport: '') {
+  @if $viewport == '' {
+    $viewport: '-';
+  } @else {
+    $viewport: '-' + $viewport + '-';
+  }
+
+  .t#{$viewport}#{$num} {
+    top: #{$num}px;
+  }
+  .r#{$viewport}#{$num} {
+    right: #{$num}px;
+  }
+  .b#{$viewport}#{$num} {
+    bottom: #{$num}px;
+  }
+  .l#{$viewport}#{$num} {
+    left: #{$num}px;
+  }
+  .t#{$viewport}#{$num}-f {
+    top: #{$num}px !important;
+  }
+  .r#{$viewport}#{$num}-f {
+    right: #{$num}px !important;
+  }
+  .b#{$viewport}#{$num}-f {
+    bottom: #{$num}px !important;
+  }
+  .l#{$viewport}#{$num}-f {
+    left: #{$num}px !important;
+  }
+  .t#{$viewport}#{$num}-n {
+    top: -#{$num}px;
+  }
+  .r#{$viewport}#{$num}-n {
+    right: -#{$num}px;
+  }
+  .b#{$viewport}#{$num}-n {
+    bottom: -#{$num}px;
+  }
+  .l#{$viewport}#{$num}-n {
+    left: -#{$num}px;
+  }
+}
+
+@mixin do-make-position($viewport) {
+  $num: 5;
+  @while $num <= 500 {
+    @include make-position($num, $viewport);
+    $num: $num + 5;
+  }
+}
+
+@media (min-width: 480px) {
+  @include do-make-position('xs');
+}
+@include media-breakpoint-up(sm) {
+  @include do-make-position('sm');
+}
+@include media-breakpoint-up(md) {
+  @include do-make-position('md');
+}
+@include media-breakpoint-up(lg) {
+  @include do-make-position('lg');
+}
+@include media-breakpoint-up(xl) {
+  @include do-make-position('xl');
+}

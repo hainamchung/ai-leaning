@@ -1,0 +1,44 @@
+// font-family
+.tx-sfdisplay {
+  font-family: $sf-display;
+  font-weight: 400;
+}
+.tx-sfdisplay-medium {
+  font-family: $sf-display-medium;
+  font-weight: 500;
+}
+.tx-sfdisplay-semibold {
+  font-family: $sf-display-semibold;
+  font-weight: 600;
+}
+.tx-sftext {
+  font-family: $sf-text;
+  font-weight: 400;
+}
+.tx-sftext-medium {
+  font-family: $sf-text-medium;
+  font-weight: 500;
+}
+.tx-sftext-semibold {
+  font-family: $sf-text-semibold;
+  font-weight: 600;
+}
+.tx-sfsan-serif {
+  font-family: $sf-san-serif;
+}
+
+//
+.tx-gray-03 {
+  color: $color-gray-03;
+}
+
+.tx-gray-04 {
+  color: $color-gray-04;
+}
+.tx-17 {
+  font-size: 17px;
+}
+
+.tx-ip-14 {
+  font-size: 14px !important;
+}

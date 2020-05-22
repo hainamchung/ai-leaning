@@ -1,0 +1,87 @@
+.split-content {
+  margin: 5px 0;
+  border-top: 1px solid $border-color;
+}
+.subsider-item {
+  margin-top: 2px;
+  .left-icon {
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.icon-item {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-sidebar {
+  .subsider-item {
+    .tx-nav {
+      padding-top: 2px;
+    }
+  }
+}
+
+.aside {
+  .aside-menu-link {
+    cursor: pointer;
+  }
+}
+
+.item-subsider {
+  justify-content: start;
+
+  .opleicon-check {
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    justify-content: center;
+  }
+}
+
+.popolamama-sidebar {
+  border-right-color: $color-border-gray-01;
+}
+.aside-popolamama {
+  .aside-body {
+    padding: 20px;
+  }
+}
+
+.aside-logo {
+  color: $color-logo;
+}
+.user-x_subsider {
+  padding-left: 2px;
+}
+.check_subsider {
+  padding-left: 2px;
+}
+// mail content
+.sidebar-group-content {
+  @include flexbox();
+  @include flex-direction(column);
+
+  .sidebar-group-top {
+    background-color: #fff;
+  }
+  .mail-group-body {
+    @include flex(1);
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .list-content-body {
+    @include flexbox();
+    min-height: 100%;
+  }
+}
+.sidebar-group-top {
+  .top-candidate-info {
+    border-bottom: 1px solid rgba(72, 94, 144, 0.16);
+    padding: 20px;
+  }
+}

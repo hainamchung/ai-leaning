@@ -1,0 +1,28 @@
+.list-container {
+  left: 0;
+  .search-list-content {
+    position: static;
+  }
+  .mail-group-header {
+    .search-form .form-control {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .list-content {
+    position: static;
+    height: calc(100% - 60px);
+  }
+}
+.side-bar-list {
+  .side-bar-list-content {
+    left: 320px;
+  }
+  .side-bar-list-body {
+    top: 0;
+  }
+}
+.side-company-list {
+  padding-bottom: 10px;
+  width: 100%;
+}

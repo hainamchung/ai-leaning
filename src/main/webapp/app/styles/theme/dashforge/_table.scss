@@ -1,0 +1,65 @@
+.card-dashboard-table {
+  .table {
+    th,
+    td {
+      border-color: $border-color;
+      padding: 10px 15px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    tr {
+      td,
+      th {
+        &:last-child {
+          border-right: 0;
+        }
+        &:first-child {
+          border-left: 0;
+        }
+      }
+    }
+    thead {
+      tr {
+        th {
+          border-top: 0;
+        }
+        &th:first-child {
+          border-left-width: 0;
+        }
+        &:last-child {
+          border-right-width: 0;
+        }
+      }
+
+      tr:first-child th {
+        font-size: 13px;
+        background-color: $color-ui-01;
+        text-align: left;
+      }
+
+      tr:last-child th {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 8px 15px;
+        color: $color-text-03;
+      }
+    }
+    tbody {
+      tr {
+        &:last-child {
+          td,
+          th {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    strong {
+      font-family: $font-family-system;
+      font-weight: $font-weight-medium;
+    }
+  }
+}

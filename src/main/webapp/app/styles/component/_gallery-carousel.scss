@@ -1,0 +1,31 @@
+.carousel-custom {
+  .control-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    @include border-radius(50%);
+    padding: 2px 2px 3px;
+  }
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+
+    .img-gallery {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.img-cover-portpolio {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  @include media-breakpoint-down(lg) {
+    width: 150px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100px;
+  }
+}
