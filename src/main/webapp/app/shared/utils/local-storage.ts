@@ -5,7 +5,7 @@ import { getCurrentDomain } from 'app/shared/utils';
 import { CookieKey } from 'app/shared/constant';
 import { ENV } from 'app/config/constants';
 
-const USER_DATA = 'pts-popolamama-user-data';
+const USER_DATA = 'pts-ai-learning-user-data';
 const History_Storage = 'historyStorage';
 
 function isExpired(time) {

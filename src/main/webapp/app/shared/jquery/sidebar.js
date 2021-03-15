@@ -2,15 +2,15 @@ import $ from 'jquery';
 import PerfectScrollbar from 'perfect-scrollbar';
 
 const sidebarJQuery = () => {
-  $('#root').addClass('app-popolamama');
-  const mailSidebarBody = new PerfectScrollbar('.popolamama-sidebar-body', {
+  $('#root').addClass('app-ai-learning');
+  const mailSidebarBody = new PerfectScrollbar('.ai-learning-sidebar-body', {
     suppressScrollX: true
   });
 
   $('#atsMenu').on('click', function(e) {
     e.preventDefault();
 
-    $('#root').addClass('popolamama-sidebar-show');
+    $('#root').addClass('ai-learning-sidebar-show');
 
     $(this).addClass('d-none');
     $('#mainMenuOpen').removeClass('d-none');

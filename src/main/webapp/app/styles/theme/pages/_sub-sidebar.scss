@@ -1,11 +1,11 @@
-.app-popolamama {
-  &.popolamama-sidebar-show {
+.app-ai-learning {
+  &.ai-learning-sidebar-show {
     @include media-breakpoint-down(md) {
     }
   }
 }
 
-.popolamama-wrapper {
+.ai-learning-wrapper {
   top: $height-header-mobile + $height-top-content;
   bottom: 0;
   left: 0;
@@ -16,7 +16,7 @@
   }
 }
 
-.popolamama-wrapper-two {
+.ai-learning-wrapper-two {
   @include media-breakpoint-up(lg) {
     position: relative;
     height: 100%;
@@ -24,7 +24,7 @@
   }
 }
 
-.popolamama-sidebar {
+.ai-learning-sidebar {
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -50,7 +50,7 @@
   }
 }
 
-.popolamama-sidebar-header {
+.ai-learning-sidebar-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -85,7 +85,7 @@
   }
 }
 
-.popolamama-sidebar-body {
+.ai-learning-sidebar-body {
   position: absolute;
   top: 10px;
   left: 0;
@@ -93,7 +93,7 @@
   bottom: 0;
 }
 
-.popolamama-content-normal {
+.ai-learning-content-normal {
   position: absolute;
   top: 0;
   left: 0;
@@ -111,7 +111,7 @@
   // }
 }
 
-.popolamama-content {
+.ai-learning-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -129,7 +129,7 @@
   }
 }
 
-.popolamama-content-header {
+.ai-learning-content-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -182,7 +182,7 @@
   }
 }
 
-.popolamama-content-body {
+.ai-learning-content-body {
   position: absolute;
   top: 55px;
   left: 0;
@@ -328,7 +328,7 @@
   }
 }
 
-.aside-popolamama {
+.aside-ai-learning {
   @include media-breakpoint-up(lg) {
     + .content {
       margin-left: $height-header;

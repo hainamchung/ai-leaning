@@ -137,8 +137,6 @@
     float: right;
   }
   .select-icon {
-    // color: $gray-500;
-    // font-size: 6px;
     float: right;
     width: 0;
     height: 0;
@@ -297,7 +295,6 @@
     &:before {
       content: '\e939';
       color: $active-03;
-      font-family: 'popolamamaicon';
       font-size: 12px;
       height: 12px;
       line-height: 1;
@@ -316,7 +313,6 @@
     &:before {
       content: '\e96e';
       color: $active-03;
-      font-family: 'popolamamaicon';
       font-size: 12px;
       height: 12px;
       line-height: 1;

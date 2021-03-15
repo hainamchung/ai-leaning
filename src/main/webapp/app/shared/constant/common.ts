@@ -14,10 +14,10 @@ const emailRFC = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@
 export const regexEmailRFC = emailRFC;
 
 export enum CookieKey {
-  accessToken = 'accessToken-popolamama',
-  pastUrl = 'pastUrl-popolamama',
-  deviceToken = 'deviceToken-popolamama',
-  userRole = 'userRole-popolamama'
+  accessToken = 'accessToken-ai-learning',
+  pastUrl = 'pastUrl-ai-learning',
+  deviceToken = 'deviceToken-ai-learning',
+  userRole = 'userRole-ai-learning'
 }
 export const lgSize = 1200;
 

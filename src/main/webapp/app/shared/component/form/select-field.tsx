@@ -24,7 +24,7 @@ export interface ISelectFieldModel {
 const ClearIndicator = props =>
   components.ClearIndicator && (
     <components.ClearIndicator className="select-clear-indicator" {...props}>
-      <i className="delete-icon opleicon-x" />
+      <i className="delete-icon aiicon-x" />
     </components.ClearIndicator>
   );
 
@@ -100,7 +100,7 @@ const MultiValue = props => (
 const MultiValueRemove = props => (
   <div className="remove-value">
     <components.MultiValueRemove {...props}>
-      <span className="opleicon-x" />
+      <span className="aiicon-x" />
     </components.MultiValueRemove>
   </div>
 );

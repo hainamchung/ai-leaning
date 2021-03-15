@@ -22,35 +22,4 @@
   .task-item-footer {
     @include border-radius-bottom(5px);
   }
-  .btn-task-edit {
-    border-color: $color-border-1;
-    @include border-radius(4px);
-    color: $gray-500;
-    font-size: 14px;
-    height: 24px;
-    padding: 3px 5px;
-    width: 24px;
-
-    @include min-breakpoint(1024px) {
-      @include transition(all 0.2s ease-in-out);
-
-      &:hover {
-        background-color: $active-03;
-        border-color: $active-03;
-        color: #fff;
-      }
-    }
-  }
-}
-
-.job-offers-item {
-  .selection-action {
-    .btn-save {
-      // padding-bottom: 4px;
-      // padding-top: 4px;
-    }
-    > .loading-wrapper {
-      width: 100%;
-    }
-  }
 }

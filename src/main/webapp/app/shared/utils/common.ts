@@ -39,9 +39,7 @@ export function getAccessTokenParams(searchQuery: string) {
 }
 
 export function getCurrentDomain() {
-  const parts = window.location.hostname.split('.');
-  parts.shift();
-  return parts.join('.');
+  return window.location.hostname;
 }
 
 export function snakeToCamel(str) {

@@ -108,28 +108,28 @@
     font-size: 28px;
     margin-right: 15px;
   }
-  .opleicon-file-pdf {
+  .aiicon-file-pdf {
     color: $color-pdf;
   }
-  .opleicon-file-word {
+  .aiicon-file-word {
     color: $color-word;
   }
-  .opleicon-file-image {
+  .aiicon-file-image {
     color: $color-img;
   }
-  .opleicon-file-audio {
+  .aiicon-file-audio {
     color: $color-audio;
   }
 
-  .opleicon-file-excel {
+  .aiicon-file-excel {
     color: $color-excel;
   }
 
-  .opleicon-file-video {
+  .aiicon-file-video {
     color: $color-video;
   }
 
-  .opleicon-file-powerpoint {
+  .aiicon-file-powerpoint {
     color: $color-powerpoint;
   }
 
@@ -172,7 +172,7 @@
   &.actived {
     color: $color-yellow-01;
 
-    .opleicon-star:before {
+    .aiicon-star:before {
       content: '\e971';
     }
     &:hover {

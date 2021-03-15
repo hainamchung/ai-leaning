@@ -92,7 +92,7 @@ module.exports = options => {
       new writeFilePlugin(),
       new webpack.WatchIgnorePlugin([utils.root('src/test')]),
       new WebpackNotifierPlugin({
-        title: 'Popolamama'
+        title: 'Ai Learning'
       })
     ].filter(Boolean)
   });

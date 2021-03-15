@@ -35,9 +35,11 @@
       padding: 2px 8px;
     }
   }
+
   .btn-transparent {
     color: $color-text-03;
   }
+
   .btn-icon-pr {
     @include vertical-align-absolute();
     right: 0;
@@ -47,6 +49,7 @@
     }
   }
 }
+
 .radio-blue {
   .custom-control-label {
     color: $active-03;
@@ -59,12 +62,14 @@
     }
   }
 }
+
 .main-form {
   padding-top: 35px;
 
   .required {
     color: $required;
   }
+
   .label-control {
     color: $color-label;
     display: block;
@@ -74,13 +79,6 @@
     line-height: 12px;
   }
 
-  .form-label-candidate {
-    font-size: $font-size-base;
-    line-height: $headings-line-height;
-    color: $color-inverse-01;
-    letter-spacing: 0.5px;
-    font-weight: $font-weight-medium;
-  }
   .value-control {
     font-size: 1.125rem;
     line-height: 1.2;
@@ -108,11 +106,6 @@
     margin-bottom: 10px;
   }
 
-  .forgotpass-link {
-    font-size: 13px;
-    margin-top: 20px;
-  }
-
   .error {
     color: $error-color;
     display: inline-block;
@@ -137,18 +130,6 @@
       .form-control {
         height: 65px !important;
       }
-    }
-  }
-}
-
-.candidate-form {
-  .form-control {
-    color: #8392a5;
-    font-size: 13px;
-  }
-  .input-content {
-    span.value-control {
-      white-space: pre-wrap;
     }
   }
 }
@@ -184,11 +165,6 @@
     line-height: 1.2;
   }
 
-  .forgotpass-link {
-    font-size: 13px;
-    margin-top: 20px;
-  }
-
   .error {
     color: $error-color;
     display: inline-block;
@@ -207,122 +183,17 @@
   .buttons {
     text-align: center;
   }
-
-  &.login-form,
-  &.register-form {
-    padding-top: 15px;
-  }
-
-  &.newpass-form {
-    padding-top: 15px;
-  }
-
-  &.forgot-password-form {
-    padding-top: 0px;
-    .form-group {
-      margin-bottom: 0px;
-    }
-  }
 }
 
 .public-container {
   max-width: 100%;
   margin: 0 auto;
 
-  &.login-container,
-  &.register-container,
-  &.resetpass-container,
-  &.assistant-form-container,
-  &.newpassword-container {
+  &.login-container {
     width: 450px;
   }
 
   &.content-auth-alt {
     text-align: center;
-  }
-}
-
-.create-occupation-form {
-  .suggestion-custom {
-    .suggestion-label {
-      .tx-placeholder {
-        color: $color-text-04;
-      }
-    }
-  }
-}
-.upload-file-button {
-  background-color: $active-03;
-  border: 1px solid $active-03;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  @include flexbox();
-  @include align-items(center);
-  @include flex-wrap(nowrap);
-  font-size: 10px;
-  height: 34px;
-  min-width: 100px;
-  overflow: hidden;
-  padding: 3px 0;
-  position: relative;
-  white-space: nowrap;
-
-  .input-file {
-    box-shadow: none;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200%;
-    height: 100%;
-    outline: none;
-    opacity: 0;
-    z-index: 1;
-  }
-  .icon-left {
-    cursor: pointer;
-    font-size: 14px;
-    margin-right: 5px;
-  }
-  .button-text {
-    cursor: pointer;
-    margin: 0;
-    white-space: nowrap;
-  }
-  .btn-loading-wrapper {
-    &:hover {
-      background-color: #0158d4;
-      border-color: #0158d4;
-      color: #fff;
-    }
-  }
-  .btn-primary {
-    @include align-items(center);
-    @include justify-content(center);
-    font-size: 10px;
-    padding: 3px 0;
-    width: 100%;
-  }
-}
-.upload-file-container {
-  background-color: #fff;
-  border: 1px solid $color-border-form;
-  border-radius: 5px;
-  max-width: 500px;
-  padding: 15px;
-  .file-info {
-    color: $color-dark-01;
-    font-size: 10px;
-    padding-left: 15px;
-    word-break: break-word;
-    padding-right: 10px;
-  }
-  .button-remove-item {
-    color: $color-gray-05;
-    height: 18px;
-    &:hover {
-      color: $color-red;
-    }
   }
 }

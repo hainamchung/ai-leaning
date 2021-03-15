@@ -7,7 +7,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
 
 import AppRoutes from 'app/route';
-import { IRootState } from 'app/redux/reducer';
 import { userConfirmation } from 'app/shared/component';
 
 const baseHref = document
@@ -22,7 +21,6 @@ export interface IAppProps extends StateProps, DispatchProps {
 
 export class App extends React.Component<IAppProps> {
   render() {
-    const paddingTop = '60px';
     return (
       <React.Fragment>
         <Router basename={baseHref} getUserConfirmation={(mes, callback) => userConfirmation(mes, callback)}>
@@ -33,13 +31,9 @@ export class App extends React.Component<IAppProps> {
   }
 }
 
-const mapStateToProps = ({ loadingReducer }: IRootState) => ({
-  // todo
-});
+const mapStateToProps = () => ({});
 
-const mapDispatchToProps = dispatch => ({
-  // todo
-});
+const mapDispatchToProps = () => ({});
 
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = typeof mapDispatchToProps;

@@ -110,7 +110,7 @@ module.exports = options => {
     },
     plugins: [
       new SWPrecacheWebpackPlugin({
-        cacheId: 'popolamama',
+        cacheId: 'Ai Learning',
         dontCacheBustUrlsMatching: /\.\w{8}\./,
         filename: 'service-worker.js',
         minify: true,

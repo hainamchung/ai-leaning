@@ -4,8 +4,6 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 
 import { LoadingWraper, Breadcrumb } from 'app/shared/component';
 
-import { Sider } from 'app/shared/component/sider';
-
 interface IUserProps extends RouteProps {
   loadingAction?: string;
   title?: string;
@@ -17,7 +15,6 @@ export const DefaultFrame = ({ component: Component, loadingAction, title, route
 
     return (
       <React.Fragment>
-        <Sider location={props.location} />
         <div className="content ht-100v pd-0-f">
           <div className="content-body content-body-no-scroll">
             <PerfectScrollbar>

@@ -6,7 +6,7 @@ interface IFontIconProps {
   status?: string;
 }
 const FontIcon = (props: IFontIconProps) => (
-  <i className={`opleicon-${props.iconName || ''} ${props.className || ''} ${props.status || ''}`} />
+  <i className={`aiicon-${props.iconName || ''} ${props.className || ''} ${props.status || ''}`} />
 );
 
 export { FontIcon };
